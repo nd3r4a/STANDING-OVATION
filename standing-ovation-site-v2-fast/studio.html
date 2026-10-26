@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark light">
+<title>Green Room studio</title>
+<meta name="description" content="Author-only helper for adding Green Room posts.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preload" href="assets/fonts/cinzel-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/base.css?v=20261021">
+<link rel="stylesheet" href="assets/green-room.css?v=20261021">
+<script src="assets/theme.js?v=20261021"></script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M9 3h6l-1 6 3 4H7l3-4z"/><path d="M12 13v8"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+</svg>
+<nav class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">STANDING OVATION</a>
+    <div class="nav-links" id="navLinks"><a href="green-room.html">Green Room</a></div>
+    <div class="nav-tools"><button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode"><svg class="ic i-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="ic i-moon" aria-hidden="true"><use href="#i-moon"/></svg></button><button class="nav-burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button></div>
+  </div>
+</nav>
+
+<main class="gr-page">
+  <div class="wrap">
+    <header class="gr-intro">
+      <h1 class="display">Green Room studio</h1>
+      <p class="lead">Write a post, check how it will look, then copy the updated file. Nothing is sent or saved anywhere.</p>
+    </header>
+    <div class="studio-grid">
+      <section class="card">
+        <h2>1. Write</h2>
+        <p class="hint">Blank line = new paragraph. <span class="mono">## Heading</span> for a sub-heading, <span class="mono">---</span> for a divider, <span class="mono">*italic*</span> and <span class="mono">**bold**</span> inside a line. Poems keep their line breaks.</p>
+        <div class="row2">
+          <div class="field"><label for="stType">Type</label>
+            <select class="control" id="stType"><option value="update">Update</option><option value="poem">Poem</option><option value="article">Article</option></select></div>
+          <div class="field"><label for="stPin">Pin to top</label>
+            <select class="control" id="stPin"><option value="no">No</option><option value="yes">Yes (replaces the current pin)</option></select></div>
+        </div>
+        <div class="field"><label for="stTitle">Title (needed for poems and articles)</label>
+          <textarea class="control" id="stTitle" rows="1" spellcheck="true"></textarea></div>
+        <div class="field"><label for="stBody">Post</label>
+          <textarea class="control" id="stBody" rows="14" spellcheck="true"></textarea></div>
+      </section>
+      <div class="studio-side">
+        <section class="card studio-preview">
+          <h2>2. Preview</h2>
+          <p class="hint">This is how your post will look in the Green Room.</p>
+          <div class="chat-feed in-teaser" id="stPreview"></div>
+        </section>
+        <section class="card">
+          <h2>3. Publish</h2>
+          <ol class="steps-list">
+            <li>Press <strong>Build posts.js</strong>, then <strong>Copy</strong>.</li>
+            <li>In your site folder, open <span class="mono">assets/posts.js</span>, select everything, paste, save.</li>
+            <li>Upload the folder to Netlify again. The post appears in the Green Room and on the home page.</li>
+          </ol>
+          <div class="studio-actions">
+            <button class="btn btn-primary btn-sm" id="stBuild" type="button"><span>Build posts.js</span></button>
+            <button class="btn btn-ghost btn-sm" id="stCopy" type="button"><span>Copy</span></button>
+          </div>
+          <p class="status" id="stStatus" role="status"></p>
+          <div class="field"><label for="stOut">Updated posts.js</label>
+            <textarea class="control mono" id="stOut" rows="8" readonly></textarea></div>
+          <p class="hint">To remove or edit an old post, change its block in <span class="mono">assets/posts.js</span> directly. The build runs a check, so a typo stops the deploy instead of breaking the page.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="assets/posts.js?v=20261021" defer></script>
+<script src="assets/green-room.js?v=20261021" defer></script>
+<script src="assets/studio.js?v=20261021" defer></script>
+<script src="assets/site.js?v=20261021" defer></script>
+</body>
+</html>
