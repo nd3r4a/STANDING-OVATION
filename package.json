@@ -1,0 +1,12 @@
+{
+  "name": "standing-ovation-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "security:payment-links": "node scripts/verify-payment-links.mjs",
+    "security:static": "node scripts/verify-security.mjs",
+    "security:posts": "node scripts/verify-posts.mjs",
+    "security:production-payment": "node scripts/verify-production-payment.mjs",
+    "security": "npm run security:payment-links && npm run security:posts && npm run security:static"
+  }
+}
