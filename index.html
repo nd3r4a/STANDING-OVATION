@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-curtain>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark light">
+<title>Standing Ovation — Olulowo Adebayo Ogundipe</title>
+<meta name="description" data-i18n-content="meta.desc" content="Order your copy of Standing Ovation, a novel by Olulowo Adebayo Ogundipe. Hardcopy in Nigeria, hardcopy worldwide through Amazon and Lulu.">
+<meta property="og:title" content="Standing Ovation — Olulowo Adebayo Ogundipe">
+<meta property="og:description" content="A psychological thriller set in Nigeria. Read Chapter One free.">
+<link rel="preload" href="assets/fonts/cinzel-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/media/book-cover.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="assets/base.css?v=20261030">
+<link rel="stylesheet" href="assets/index.css?v=20261030">
+<link rel="stylesheet" href="assets/green-room.css?v=20261030">
+<script src="assets/theme.js?v=20261030"></script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="curtain" aria-hidden="true"><div class="cur cur-l"></div><div class="cur cur-r"></div></div>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M9 3h6l-1 6 3 4H7l3-4z"/><path d="M12 13v8"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+</svg>
+<nav class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">STANDING OVATION</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#story" data-i18n="nav.story">Story</a>
+      <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="green-room.html" data-gr-link><span data-i18n="nav.gr">Green Room</span><span class="new-pill" data-i18n="nav.new">New</span></a>
+      <a href="chapter-one.html" data-i18n="nav.chapter">Read Chapter One</a>
+      <a class="only-m" href="#order" data-i18n="cta.order">Order now</a>
+    </div>
+    <div class="nav-tools">
+      <select class="lang-select" id="langSelect" aria-label="Language" data-i18n-label="lang.label"><option value="en">English</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="es">Español</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="sv">Svenska</option><option value="ja">日本語</option></select>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode"><svg class="ic i-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="ic i-moon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+      <a class="btn btn-primary btn-sm nav-order" href="#order"><span data-i18n="cta.order">Order now</span></a>
+      <button class="nav-burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Menu" data-i18n-label="nav.menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-beams" aria-hidden="true"><i></i><i></i></div>
+  <div class="hero-dust" id="dust" aria-hidden="true"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="badge"><span class="dot"></span><span data-i18n="hero.badge">Out now</span></p>
+      <p class="eyebrow" data-i18n="hero.eyebrow">A Novel</p>
+      <h1 class="display"><span class="w">Standing</span> <span class="w">Ovation</span></h1>
+      <p class="byline">Olulowo Adebayo Ogundipe</p>
+      <p class="hook" data-i18n="hero.hook">A psychological thriller set in Nigeria.</p>
+      <div class="price-row"><span class="price" id="heroPrice">₦20,000</span><span class="price-note" data-i18n="hero.note">Hardcopy · Nigeria</span></div>
+      <div class="btn-row">
+        <a class="btn btn-primary btn-pulse" href="#order"><span data-i18n="cta.order">Order now</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost" href="chapter-one.html"><span data-i18n="nav.chapter">Read Chapter One</span></a>
+        <a class="btn btn-ghost" href="https://wa.me/qr/BI523PI6DXGLJ1" id="whatsappLinkHero" target="_blank" rel="noopener noreferrer"><span data-i18n="hero.whatsapp">Ask on WhatsApp</span></a>
+      </div>
+    </div>
+    <div class="hero-book">
+      <div class="tilt book3d" data-tilt="10"><img src="assets/media/book-cover.webp" width="760" height="1140" fetchpriority="high" decoding="async" data-i18n-alt="alt.cover" alt="Standing Ovation book cover — a figure controlling marionette strings before a masked audience, red theatre curtains behind"></div>
+      <span class="book-shadow" aria-hidden="true"></span>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#story" aria-hidden="true" tabindex="-1"></a>
+</header>
+
+<div class="marquee" aria-hidden="true"><div class="marquee-track"><span data-i18n="mq1">Psychological thriller</span><i>✦</i><span data-i18n="mq0">Nigeria</span><i>✦</i><span data-i18n="mq2">Faith</span><i>✦</i><span data-i18n="mq3">Fame</span><i>✦</i><span data-i18n="mq4">Power</span><i>✦</i><span data-i18n="mq5">Control</span><i>✦</i><span data-i18n="mq1">Psychological thriller</span><i>✦</i><span data-i18n="mq0">Nigeria</span><i>✦</i><span data-i18n="mq2">Faith</span><i>✦</i><span data-i18n="mq3">Fame</span><i>✦</i><span data-i18n="mq4">Power</span><i>✦</i><span data-i18n="mq5">Control</span><i>✦</i></div></div>
+
+<section id="story">
+  <div class="wrap story-grid">
+    <div class="story-cover reveal" data-reveal="left">
+      <div class="tilt" data-tilt="7"><img src="assets/media/book-cover.webp" width="760" height="1140" loading="lazy" decoding="async" data-i18n-alt="alt.cover" alt="Standing Ovation book cover — a figure controlling marionette strings before a masked audience, red theatre curtains behind"></div>
+    </div>
+    <div class="story-copy reveal" data-reveal="right">
+      <p class="eyebrow" data-i18n="story.eyebrow">The Story</p>
+      <p class="lede" data-i18n="story.lede">She built the most trusted man in Nigeria. Now someone is tearing down everyone who ever doubted him.</p>
+      <p data-i18n="story.p1">For eleven years, Morayo Adekunle has been the one thing standing between Folarin Ajayi and disaster: his memory, his shield, the person who knows exactly which truths never leave the room. Then the critics who once wrote him off start dying, each death staged with a precision that reads less like rage and more like a scripted revenge.</p>
+      <p data-i18n="story.p2">A detective who doesn't believe in coincidence starts pulling every thread in Folarin's world. And the closer she gets, the clearer it becomes: the woman who's spent a decade protecting him has been hiding something far more dangerous than his secrets.</p>
+      <p data-i18n="story.p3">Faith, fame, and power collide in a story about what happens when devotion curdles into control, and control curdles into something far worse.</p>
+      <p data-i18n="story.readers" class="for-readers">Perfect for readers who like their thrillers psychological and their power plays personal.</p>
+    </div>
+  </div>
+</section>
+
+<section id="real">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" data-i18n="real.eyebrow">It's real</p>
+      <h2 data-i18n="real.h2">Not a mockup. The finished book.</h2>
+      <p class="lead" data-i18n="real.lead">This is the printed copy of Standing Ovation, photographed and filmed by the author. What you see here is what arrives at your door.</p>
+    </div>
+    <div class="real-grid">
+      <figure class="real-fig reveal" data-reveal="left">
+        <div class="media"><img src="assets/media/book-in-hand.webp" width="720" height="960" loading="lazy" decoding="async" data-i18n-alt="alt.hand" alt="The author holding the printed hardcopy of Standing Ovation against a stone wall"></div>
+        <figcaption data-i18n="real.cap1">The printed hardcopy, in the author's hand.</figcaption>
+      </figure>
+      <figure class="real-fig reveal" data-reveal="right">
+        <div class="media"><video controls playsinline preload="none" poster="assets/media/video-poster.webp" data-i18n-label="label.video" aria-label="Short video of the printed Standing Ovation book">
+          <source src="assets/media/book-video.mp4" type="video/mp4">
+          Your browser can't play this video.
+        </video></div>
+        <figcaption data-i18n="real.cap2">A closer look at the book (8 seconds).</figcaption>
+      </figure>
+    </div>
+    <div class="real-cta reveal">
+      <a href="chapter-one.html" class="btn btn-ghost"><span data-i18n="real.cta">Read Chapter One free</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" data-i18n="rev.eyebrow">From the first readers</p>
+      <h2 data-i18n="rev.h2">They stayed up. They doubted the narrator.</h2>
+      <p class="lead" data-i18n="rev.lead">Early readers on Standing Ovation, in their own words.</p>
+      <div class="rating-line"><span class="stars" role="img" data-i18n-label="label.stars" aria-label="5 out of 5 stars">★★★★★</span><span data-i18n="rev.rating">Six early readers · six five-star reviews</span></div>
+      <p class="rev-note" data-non-en hidden data-i18n="rev.note">Reviews translated from the original English.</p>
+    </div>
+    <figure class="feature-quote reveal" data-reveal="zoom">
+      <blockquote><span data-i18n="q1a">I have to give it to the author. The book actually</span> <em data-i18n="q1b">made me question the narrator.</em> <span data-i18n="q1c">There were moments I was reading and thinking, “Okay, but are you telling me the whole truth?”</span></blockquote>
+      <figcaption class="who"><span class="stars" role="img" data-i18n-label="label.stars" aria-label="5 out of 5 stars">★★★★★</span><span data-i18n="rev.who">Early reader</span></figcaption>
+    </figure>
+
+    <div class="review-grid" data-stagger>
+      <figure class="review-card reveal">
+        <span class="stars" role="img" data-i18n-label="label.stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote><span data-i18n="q2a">Honestly, I did not see that ending coming. I had already convinced myself I knew who was behind everything.</span> <em data-i18n="q2b">Only for the book to prove me wrong.</em></blockquote>
+        <figcaption class="who" data-i18n="rev.who">Early reader</figcaption>
+      </figure>
+      <figure class="review-card reveal">
+        <span class="stars" role="img" data-i18n-label="label.stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote><span data-i18n="q3a">I do not normally read thrillers by Nigerian authors, but this one held my attention. The way the story slowly reveals Morayo’s character is honestly one of my favourite things about it. At first, you think you understand her.</span> <em data-i18n="q3b">You really do not.</em></blockquote>
+        <figcaption class="who" data-i18n="rev.who">Early reader</figcaption>
+      </figure>
+      <figure class="review-card reveal">
+        <span class="stars" role="img" data-i18n-label="label.stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote><span data-i18n="q4a">I started this book at night thinking I will read two chapters and sleep.</span> <em data-i18n="q4b">Big mistake.</em> <span data-i18n="q4c">I ended up staying awake because I wanted to know what was going on.</span></blockquote>
+        <figcaption class="who" data-i18n="rev.who">Early reader</figcaption>
+      </figure>
+      <figure class="review-card reveal">
+        <span class="stars" role="img" data-i18n-label="label.stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote><span data-i18n="q5a">This is one of those books I would rather not say too much about because explaining it too much will spoil the experience.</span> <em data-i18n="q5b">Just read it.</em> <span data-i18n="q5c">That is my review.</span></blockquote>
+        <figcaption class="who" data-i18n="rev.who">Early reader</figcaption>
+      </figure>
+      <figure class="review-card reveal">
+        <span class="stars" role="img" data-i18n-label="label.stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote data-i18n="q6">Folarin’s argument about people using religion when they do not have answers was uncomfortable because there is some truth in it. The book does not give you an easy answer either, which I liked.</blockquote>
+        <figcaption class="who" data-i18n="rev.who">Early reader</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="greenroom" class="gr-teaser" hidden>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" data-i18n="gr.eyebrow">The Green Room</p>
+      <h2 data-i18n="gr.h2">Backstage with the author</h2>
+      <p class="lead" data-i18n="gr.lead">News about what I'm writing next, plus poems and articles. Open to everyone, no sign-up.</p>
+    </div>
+    <div class="chat reveal" data-reveal="zoom">
+      <div class="chat-head">
+        <div class="avatar" aria-hidden="true">OA</div>
+        <div><div class="chat-name">Olulowo Adebayo Ogundipe</div><div class="chat-role" data-i18n="grp.role">Author of Standing Ovation</div></div>
+        <span class="pill"><span class="dot"></span><span data-i18n="grp.status">Open to everyone</span></span>
+      </div>
+      <div class="chat-feed in-teaser" id="grTeaser"></div>
+    </div>
+    <div class="gr-teaser-cta reveal">
+      <a class="btn btn-primary" href="green-room.html"><span data-i18n="gr.cta">Open the Green Room</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
+      <h2 data-i18n="how.h2">Simple, secure, delivered</h2>
+      <p class="lead" data-i18n="how.lead">In Nigeria, one hardcopy, ordered and paid for in one place. Ordering from abroad? Amazon and Lulu are in the next section.</p>
+    </div>
+    <div class="steps" data-stagger>
+      <div class="step reveal"><div class="num">1</div><h3 data-i18n="how.s1h">Order</h3><p data-i18n="how.s1p">Tap the button below — it takes you straight to a secure checkout page.</p></div>
+      <div class="step reveal"><div class="num">2</div><h3 data-i18n="how.s2h">Pay</h3><p data-i18n="how.s2p">Pay by card, bank transfer, or USSD. Delivery cost is calculated for your address at checkout.</p></div>
+      <div class="step reveal"><div class="num">3</div><h3 data-i18n="how.s3h">Receive</h3><p data-i18n="how.s3p">Your name, phone, and delivery address are collected during checkout — no separate form to fill.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="order">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <p class="eyebrow" data-i18n="res.eyebrow">Order</p>
+      <h2 data-i18n="res.title">Choose where you're ordering from</h2>
+    </div>
+    <div class="order-grid">
+      <div class="panel panel-featured glow reveal" id="nigeria" data-reveal="left">
+        <p class="panel-tag" data-i18n="nig.tag">In Nigeria</p>
+        <h3 class="panel-title" data-i18n="nig.title">Get the hardcopy</h3>
+        <div class="panel-price" id="reservePrice">₦20,000</div>
+        <p class="price-label" data-i18n="nig.label">Standing Ovation, 1 copy</p>
+        <p class="format-note"><strong data-i18n="nig.fmt1">Hardcopy only</strong> · <span data-i18n="nig.fmt2">ships nationwide · delivery calculated at checkout</span></p>
+        <p class="physical-note" data-i18n="nig.phys">Hardcopies only. No ebook or digital edition will ever be sold.</p>
+        <a href="https://paystack.shop/pay/standing-ovation" id="reserveBtn" class="btn btn-primary btn-pulse" target="_blank" rel="noopener noreferrer"><span data-i18n="nig.btn">Order on Paystack</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <div class="secure-note" data-i18n="nig.secure">Secured checkout, handled entirely by Paystack. We never see or store your card details.</div>
+      </div>
+
+      <div class="panel glow reveal" id="international" data-reveal="right">
+        <p class="panel-tag" data-i18n="intl.tag">International buyers</p>
+        <h3 class="panel-title" data-i18n="intl.title">Order the hardcopy</h3>
+        <div class="store-toggle" id="storeToggle" role="group" data-i18n-label="label.store" aria-label="Store">
+          <button type="button" class="store-tab" data-store="amazon" aria-pressed="true">Amazon</button>
+          <button type="button" class="store-tab" data-store="lulu" aria-pressed="false">Lulu</button>
+        </div>
+        <p class="intl-english" data-non-en hidden data-i18n="intl.english">Standing Ovation is written in English.</p>
+        <div class="store-pane is-active" data-store="amazon">
+          <p class="lulu-what" data-i18n="amz.what">Amazon takes you to your own country's store automatically, or to the US store if your country isn't listed.</p>
+          <details class="store-list">
+            <summary data-i18n="amz.others">Choose a different Amazon store</summary>
+            <ul>
+              <li><a href="https://www.amazon.com/s?k=standing+ovation+olulowo+adebayo+ogundipe" target="_blank" rel="noopener noreferrer">amazon.com</a></li>
+              <li><a href="https://www.amazon.co.uk/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.co.uk</a></li>
+              <li><a href="https://www.amazon.de/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.de</a></li>
+              <li><a href="https://www.amazon.fr/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.fr</a></li>
+              <li><a href="https://www.amazon.es/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.es</a></li>
+              <li><a href="https://www.amazon.it/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.it</a></li>
+              <li><a href="https://www.amazon.nl/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.nl</a></li>
+              <li><a href="https://www.amazon.pl/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.pl</a></li>
+              <li><a href="https://www.amazon.se/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.se</a></li>
+              <li><a href="https://www.amazon.com.be/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.com.be</a></li>
+              <li><a href="https://www.amazon.ie/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.ie</a></li>
+              <li><a href="https://www.amazon.co.jp/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.co.jp</a></li>
+              <li><a href="https://www.amazon.ca/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.ca</a></li>
+              <li><a href="https://www.amazon.com.au/dp/9786705181" target="_blank" rel="noopener noreferrer">amazon.com.au</a></li>
+            </ul>
+          </details>
+          <a href="/amazon" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><span data-i18n="amz.btn">Order on Amazon</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <div class="secure-note" data-i18n="amz.secure">Checkout and payment are handled entirely by Amazon.</div>
+        </div>
+        <div class="store-pane" data-store="lulu">
+          <p class="lulu-what" data-i18n="lulu.what">Outside Nigeria, you can order Standing Ovation through Lulu, a print-on-demand publisher. Your copy is printed after you order and shipped to your address, so nothing sits in a warehouse waiting for you.</p>
+          <ol class="lulu-steps">
+            <li><span class="n">1</span><span><strong data-i18n="lulu.s1h">Open the book on Lulu.</strong> <span data-i18n="lulu.s1b">Tap the button below to go to the Standing Ovation page.</span></span></li>
+            <li><span class="n">2</span><span><strong data-i18n="lulu.s2h">Add it to your cart.</strong> <span data-i18n="lulu.s2b">Enter your shipping address and Lulu shows the shipping cost and delivery estimate before you pay.</span></span></li>
+            <li><span class="n">3</span><span><strong data-i18n="lulu.s3h">Pay and wait for it to arrive.</strong> <span data-i18n="lulu.s3b">Lulu prints your copy and ships it to you, with tracking.</span></span></li>
+          </ol>
+          <p class="lulu-note" data-i18n="lulu.note">The Lulu edition is a hardcopy, priced by Lulu in your currency. The ₦20,000 price applies to orders in Nigeria only.</p>
+          <a href="https://www.lulu.com/shop/olulowo-adebayo-ogundipe/standing-ovation/paperback/product-yvqk2d2.html?page=1&pageSize=4" class="btn btn-primary" target="_blank" rel="noopener noreferrer"><span data-i18n="lulu.btn">Order on Lulu</span><svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <div class="secure-note" data-i18n="lulu.secure">Checkout and payment are handled entirely by Lulu.</div>
+        </div>
+      </div>
+    </div>
+
+    <p class="alt-contact reveal"><span data-i18n="alt.a">Prefer not to use the checkout link?</span> <a id="whatsappLinkForm" data-i18n="alt.b" href="https://wa.me/qr/BI523PI6DXGLJ1" target="_blank" rel="noopener noreferrer">Order via WhatsApp instead</a><span data-i18n="alt.c">. Or </span><a href="chapter-one.html" data-i18n="alt.d">read Chapter One</a><span data-i18n="alt.e"> first.</span></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="index.html">STANDING OVATION</a>
+      <p>Olulowo Adebayo Ogundipe</p>
+      <p>ISBN 978-978-67-0518-7</p>
+    </div>
+    <div class="footer-links">
+      <a href="chapter-one.html" data-i18n="nav.chapter">Read Chapter One</a>
+      <a href="green-room.html" data-i18n="nav.gr">Green Room</a>
+      <a href="#top" data-i18n="foot.top">Back to top</a>
+    </div>
+    <div><span data-i18n="foot.pub">Published by WeWrite Publishing</span><br><a href="mailto:wewritea@gmail.com">wewritea@gmail.com</a></div>
+  </div>
+</footer>
+
+<button class="music-btn" id="musicBtn" type="button" aria-pressed="false" aria-label="Play background music">
+  <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span><span id="musicLabel">Play music</span>
+</button>
+<audio id="bgMusic" src="assets/media/calm-ambient.mp3" loop preload="none"></audio>
+
+<script src="assets/posts.js?v=20261030" defer></script>
+<script src="assets/i18n.js?v=20261030" defer></script>
+<script src="assets/green-room.js?v=20261030" defer></script>
+<script src="assets/site.js?v=20261030" defer></script>
+</body>
+</html>

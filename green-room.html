@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="color-scheme" content="dark light">
+<title data-i18n="grp.title">The Green Room | Standing Ovation</title>
+<meta name="description" data-i18n-content="grp.desc" content="Updates, poems and articles from Olulowo Adebayo Ogundipe, author of Standing Ovation. Open to everyone.">
+<link rel="preload" href="assets/fonts/cinzel-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/base.css?v=20261030">
+<link rel="stylesheet" href="assets/green-room.css?v=20261030">
+<script src="assets/theme.js?v=20261030"></script>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.2M12 19.8V22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M2 12h2.2M19.8 12H22M4.9 19.1l1.6-1.6M17.5 6.5l1.6-1.6"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M9 3h6l-1 6 3 4H7l3-4z"/><path d="M12 13v8"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></symbol>
+</svg>
+<nav class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="index.html">STANDING OVATION</a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html#story" data-i18n="nav.story">Story</a>
+      <a href="index.html#reviews" data-i18n="nav.reviews">Reviews</a>
+      <a href="green-room.html" data-gr-link class="active"><span data-i18n="nav.gr">Green Room</span><span class="new-pill" data-i18n="nav.new">New</span></a>
+      <a href="chapter-one.html" data-i18n="nav.chapter">Read Chapter One</a>
+      <a class="only-m" href="index.html#order" data-i18n="cta.order">Order now</a>
+    </div>
+    <div class="nav-tools">
+      <select class="lang-select" id="langSelect" aria-label="Language" data-i18n-label="lang.label"><option value="en">English</option><option value="de">Deutsch</option><option value="fr">Français</option><option value="es">Español</option><option value="it">Italiano</option><option value="nl">Nederlands</option><option value="pl">Polski</option><option value="sv">Svenska</option><option value="ja">日本語</option></select>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode"><svg class="ic i-sun" aria-hidden="true"><use href="#i-sun"/></svg><svg class="ic i-moon" aria-hidden="true"><use href="#i-moon"/></svg></button>
+      <a class="btn btn-primary btn-sm nav-order" href="index.html#order"><span data-i18n="cta.order">Order now</span></a>
+      <button class="nav-burger" id="navBurger" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Menu" data-i18n-label="nav.menu"><svg class="ic" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</nav>
+
+<main class="gr-page">
+  <div class="wrap">
+    <header class="gr-intro">
+      <h1 class="display" data-i18n="gr.eyebrow">The Green Room</h1>
+      <p class="sub" data-i18n="gr.h2">Backstage with the author</p>
+      <p class="lead" data-i18n="gr.lead">News about what I'm writing next, plus poems and articles. Open to everyone, no sign-up.</p>
+    </header>
+    <p class="gr-english" data-non-en hidden data-i18n="grp.english">Posts are written in English.</p>
+    <section class="chat">
+      <div class="chat-head">
+        <div class="avatar" aria-hidden="true">OA</div>
+        <div><div class="chat-name">Olulowo Adebayo Ogundipe</div><div class="chat-role" data-i18n="grp.role">Author of Standing Ovation</div></div>
+        <span class="pill"><span class="dot"></span><span data-i18n="grp.status">Open to everyone</span></span>
+      </div>
+      <button class="pinned" id="grPinned" type="button" hidden><svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg><span class="pinned-label" data-i18n="grp.pinned">Pinned</span><span class="pinned-text" lang="en"></span></button>
+      <div class="chips" role="group" data-i18n-label="grp.filter" aria-label="Filter posts">
+        <button class="chip" type="button" data-filter="all" aria-pressed="true"><span data-i18n="f.all">All</span></button>
+        <button class="chip" type="button" data-filter="update" aria-pressed="false"><span data-i18n="f.update">Updates</span></button>
+        <button class="chip" type="button" data-filter="poem" aria-pressed="false"><span data-i18n="f.poem">Poems</span></button>
+        <button class="chip" type="button" data-filter="article" aria-pressed="false"><span data-i18n="f.article">Articles</span></button>
+      </div>
+      <div class="chat-feed" id="grFeed" aria-live="polite"></div>
+      <div class="compose"><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg><span data-i18n="grp.readonly">Only the author posts here. Everyone can read.</span></div>
+    </section>
+    <noscript><p class="gr-noscript">Please turn on JavaScript to read the posts.</p></noscript>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="index.html">STANDING OVATION</a>
+      <p>Olulowo Adebayo Ogundipe</p>
+      <p>ISBN 978-978-67-0518-7</p>
+    </div>
+    <div class="footer-links">
+      <a href="chapter-one.html" data-i18n="nav.chapter">Read Chapter One</a>
+      <a href="green-room.html" data-i18n="nav.gr">Green Room</a>
+      <a href="#top" data-i18n="foot.top">Back to top</a>
+    </div>
+    <div><span data-i18n="foot.pub">Published by WeWrite Publishing</span><br><a href="mailto:wewritea@gmail.com">wewritea@gmail.com</a></div>
+  </div>
+</footer>
+
+<script src="assets/posts.js?v=20261030" defer></script>
+<script src="assets/i18n.js?v=20261030" defer></script>
+<script src="assets/green-room.js?v=20261030" defer></script>
+<script src="assets/site.js?v=20261030" defer></script>
+</body>
+</html>
